@@ -1,0 +1,50 @@
+.market-price-card {
+  background-color: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-3);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.market-price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.price-header {
+  margin-bottom: var(--space-2);
+}
+
+.price-header h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-1);
+  color: var(--color-text-primary);
+}
+
+.location {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.price-amount {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.price-change {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.price-change.up {
+  color: var(--color-success);
+}
+
+.price-change.down {
+  color: var(--color-error);
+}
